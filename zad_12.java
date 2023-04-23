@@ -52,12 +52,6 @@ public class zad_12 {
                 word = word.replaceAll(sleng[10],clearWord+"(одноклассник)");
                 NEWmessage += word+" ";
             }
-            for (String word: NEWmessage.split("\\s+")){
-                String clearWord = word.replaceAll("[^А-Яа-я]", "");
-                NEWmessage = NEWmessage.replaceAll(clearWord+",?\\s*[А-Яа-я]*\\)?\\s+,?"+clearWord, clearWord);
-                NEWmessage = NEWmessage.replaceAll(clearWord.substring(0,1).toUpperCase()+",?[А-Яа-я]*\\)?\\s+,?"
-                        +clearWord.toLowerCase(), clearWord);
-            }
             System.out.println("Исправленный текст: "+NEWmessage);
         }
 
