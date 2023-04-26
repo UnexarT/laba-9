@@ -16,11 +16,10 @@ public class zad_12 {
         for(String message: messages){
             System.out.printf("\nИсходный текст: %s",message);
             message = message.replaceAll("\\s{2,}"," ");
-            String[] words = message.split("\\s+");
             for(String pattern: patterns){
                 message = message.replaceAll(pattern+"[.,!?]?\\s*", "");
             }
-            words = message.split("\\s+");
+            String[] words = message.split("\\s+");
             for (String word: words) {
                 String clearWord = word.replaceAll("[^А-Яа-я]", "");
                 message = message.replaceAll(clearWord + ",?\\s+,?" + clearWord, clearWord);
