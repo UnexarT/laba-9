@@ -1,5 +1,5 @@
 public class zad_1 {
-    public static void main(String[] args) {
+    public void zad_1() {
         MyMass arr = new MyMass();
         System.out.println("Задайте матрицу символов: ");
         String[][] mas = arr.GetStrMas_x2();
