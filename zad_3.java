@@ -31,7 +31,7 @@ public class zad_3 {
     public static int[] Stats(String[] mas, String n) {
         int arr[] = new int[6];
         for(int i = 0; i < mas.length; i++){
-            if (mas[i].matches("[а-яА-Я]+")){
+            if (mas[i].matches("[A-zА-я]+")){
                 if (mas[i].matches("[А-Я]+")) {
                     arr[0]++;
                 }
